@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.gallery {
+  &-wrapper {
+    width: 100%;
+    @include flex(left, flex-start, column);
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.about {
+  &-wrapper {
+    width: 100%;
+    @include flex(left, flex-start, column);
+  }
+
+  &__intro {
+    @include flex(center, center, row);
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: $primary-color;
+  }
+}

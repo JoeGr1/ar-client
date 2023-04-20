@@ -1,0 +1,42 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  &-wrapper {
+    @include flex(center, center, row);
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100vw;
+    padding: 1rem;
+
+    @include tablet {
+      padding: 2rem 0;
+    }
+  }
+
+  &__home-wrapper {
+    cursor: pointer;
+    text-decoration: none;
+    color: $background-color;
+    @include flex(center, center, column);
+
+    @include tablet {
+      @include flex(center, flex-end, row);
+    }
+  }
+
+  &__name {
+    padding-right: 1rem;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  &__occupation {
+    margin: 0;
+    padding-bottom: 0.07em;
+    font-weight: 250;
+  }
+}

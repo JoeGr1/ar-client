@@ -1,0 +1,43 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.navbar {
+  &-wrapper {
+    width: 100vw;
+    @include flex(left, center, column);
+
+    padding: $mobile-margin;
+    @include tablet {
+      @include flex(left, center, row);
+      padding: $tablet-margin;
+    }
+    @include desktop {
+      padding: $desktop-margin;
+      max-width: 102rem;
+    }
+  }
+
+  &__link-list {
+    list-style: none;
+    padding: 2rem 0;
+    @include flex(left, flex-start, column);
+
+    @include tablet {
+      @include flex(left, center, row);
+    }
+  }
+
+  &__link {
+    width: fit-content;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 100;
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1)
+    );
+    border-radius: 0.3rem;
+  }
+}

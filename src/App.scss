@@ -1,0 +1,11 @@
+@use "./styles/partials/mixins" as *;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/resets" as *;
+@use "./styles/partials/typography" as *;
+
+.app-wrapper {
+  @include flex(left, flex-start, column);
+  height: 100vh;
+  background: url("./assets/images/Screenshot\ 2023-04-20\ at\ 13.45.55.png");
+  background-size: cover;
+}
