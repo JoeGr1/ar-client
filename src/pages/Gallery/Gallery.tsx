@@ -7,6 +7,11 @@ const Gallery = () => {
   return (
     <div className="gallery-wrapper">
       <Navbar />
+
+      <div className="gallery__carousel-wrapper">
+        <h2 className="gallery__title">Browse</h2>
+        <div className="gallery__swiper-wrapper"></div>
+      </div>
     </div>
   );
 };

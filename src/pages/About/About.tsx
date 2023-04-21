@@ -27,7 +27,7 @@ const About = () => {
         <p className="about__cta">
           <Link className="about__link" to="/contact">
             Get in Touch
-          </Link>{" "}
+          </Link>
           for details on available works, commissions, exhibitions,
           collaboration and studio visits.
         </p>

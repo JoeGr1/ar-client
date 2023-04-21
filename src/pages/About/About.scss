@@ -5,15 +5,43 @@
   &-wrapper {
     width: 100%;
     @include flex(left, flex-start, column);
+    padding: $mobile-margin;
+    @include tablet {
+      padding: $tablet-margin;
+    }
+    @include desktop {
+      padding: $desktop-margin;
+      max-width: 102rem;
+    }
+  }
+
+  &__text {
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+    color: $background-color;
+
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.25)
+    );
   }
 
   &__intro {
     @include flex(center, center, row);
+    color: $background-color;
+    margin: 1rem;
+  }
+
+  &__cta {
+    margin: 1rem;
+    color: $background-color;
   }
 
   &__link {
+    transform: scale(1.1);
     cursor: pointer;
     text-decoration: none;
-    color: $primary-color;
+    color: $background-color;
   }
 }

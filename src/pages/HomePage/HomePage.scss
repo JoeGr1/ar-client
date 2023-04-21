@@ -4,26 +4,44 @@
 .homepage {
   &-wrapper {
     width: 100%;
-    @include flex(left, flex-start, column);
+    @include flex(left, center, column);
+    padding: $mobile-margin;
+    @include tablet {
+      padding: $tablet-margin;
+    }
+    @include desktop {
+      padding: $desktop-margin;
+      max-width: 102rem;
+    }
   }
 
   &__text {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+    color: $background-color;
+
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.25)
+    );
   }
 
   &__intro {
     @include flex(center, center, row);
+    color: $background-color;
+    margin: 1rem;
   }
 
   &__cta {
+    margin: 1rem;
+    color: $background-color;
   }
 
   &__link {
+    transform: scale(1.1);
     cursor: pointer;
     text-decoration: none;
+    color: $background-color;
   }
 }

@@ -3,24 +3,18 @@
 
 .navbar {
   &-wrapper {
-    width: 100vw;
+    width: 100%;
     @include flex(left, center, column);
-
-    padding: $mobile-margin;
-    @include tablet {
-      @include flex(left, center, row);
-      padding: $tablet-margin;
-    }
-    @include desktop {
-      padding: $desktop-margin;
-      max-width: 102rem;
-    }
   }
 
   &__link-list {
     list-style: none;
     padding: 2rem 0;
-    @include flex(left, flex-start, column);
+    @include flex(left, center, column);
+
+    @include big-mobile {
+      @include flex(left, flex-start, row);
+    }
 
     @include tablet {
       @include flex(left, center, row);
@@ -28,6 +22,7 @@
   }
 
   &__link {
+    text-align: center;
     width: fit-content;
     margin: 1rem;
     text-decoration: none;

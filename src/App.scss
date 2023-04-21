@@ -4,8 +4,9 @@
 @use "./styles/partials/typography" as *;
 
 .app-wrapper {
-  @include flex(left, flex-start, column);
+  @include flex(left, center, column);
   height: 100vh;
-  background: url("./assets/images/Screenshot\ 2023-04-20\ at\ 13.45.55.png");
+  width: 100vw;
+  background: url("./assets/images/background.png");
   background-size: cover;
 }
