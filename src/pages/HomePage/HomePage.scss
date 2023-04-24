@@ -41,7 +41,7 @@
   &__link {
     transform: scale(1.1);
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     color: $background-color;
   }
 }

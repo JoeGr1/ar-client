@@ -34,5 +34,9 @@
       rgba(0, 0, 0, 0.1)
     );
     border-radius: 0.3rem;
+    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }

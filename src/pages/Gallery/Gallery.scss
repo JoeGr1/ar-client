@@ -36,9 +36,15 @@
     margin: 3rem 0;
   }
 
-  &__swiper-wrapper {
+  &__slider-wrapper {
     width: 40%;
     height: 100%;
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1)
+    );
+    border-radius: 4px;
   }
 
   &__image {

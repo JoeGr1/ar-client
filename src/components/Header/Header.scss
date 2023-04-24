@@ -33,6 +33,11 @@
     );
     border-radius: 0.3rem;
 
+    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
+
     @include big-mobile {
       @include flex(center, center, column);
       background: none;

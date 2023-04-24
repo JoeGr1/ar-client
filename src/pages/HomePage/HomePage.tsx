@@ -2,7 +2,6 @@ import React from "react";
 
 import "./HomePage.scss";
 import { Link } from "react-router-dom";
-import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 
 const HomePage = () => {
